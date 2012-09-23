@@ -1,0 +1,17 @@
+---
+applications:
+  .:
+    name: xdjy 
+    framework:
+      runtime:  ruby19
+      name: rails3
+      info:
+        mem: 256M
+        description: Rails Application
+        exec: 
+    url: ituqu.cloudfoundry.com
+    mem: 1G
+    instances: 1
+    services:
+      mysql-c8946:
+        type: mysql

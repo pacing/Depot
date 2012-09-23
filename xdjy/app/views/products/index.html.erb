@@ -1,0 +1,22 @@
+<table class="table">
+  <tr class="tr">
+    <th class="th"></th>
+    <th class="th"></th>
+    <th class="th"></th>
+    <th class="th"></th>
+    <th class="th"></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @products.each do |product| %>
+  <tr class="tr">
+    <td class="td">商品ID号： <%= product.id %></td>
+    <td class="td">商品名称： <%= product.title %></td>
+    <td class="td">商品描述： <%= product.description %></td>
+    <td class="td">商品价格： <%= product.price %></td>
+    <td class="td">|||<%= link_to '商品详情', product %>|||
+  </tr>
+<% end %>
+</table>
+

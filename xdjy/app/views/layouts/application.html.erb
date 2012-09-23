@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>西电物品交易中心</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="whole">
+  <p class="header1">西电物品交易中心欢迎你</p>
+  <div id="header">
+  <p class="link">
+  <%= link_to '商品列表',products_path %>
+  <%= link_to '分类查找',products_path %>
+  <%= link_to '我要卖东西',new_product_path %>
+  </p>
+  </div>
+<%= yield %>
+ 
+</body>
+</html>

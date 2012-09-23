@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>商品名称:</b>
+  <%= @product.title %>
+</p>
+
+<p>
+  <b>商品描述:</b>
+  <%= @product.description %>
+</p>
+
+<p>
+  <b>商品照片:</b>
+  <%= @product.image_url %>
+</p>
+
+<p>
+  <b>商品价格：</b>
+  <%= @product.price %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
